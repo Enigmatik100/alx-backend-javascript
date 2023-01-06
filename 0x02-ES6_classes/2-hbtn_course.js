@@ -49,7 +49,7 @@ export default class HolbertonCourse {
 
   set students(arraryStudent) {
     if (arraryStudent instanceof Array) {
-      this.students = arraryStudent;
+      this._students = arraryStudent;
     } else {
       throw new TypeError('Students must be an array');
     }
