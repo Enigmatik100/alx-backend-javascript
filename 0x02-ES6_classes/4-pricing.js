@@ -1,3 +1,5 @@
+/* eslint no-underscore-dangle: ["error", {"allow": ["_name", "_code", "_amount", "_currency"] }] */
+/* eslint-disable-next-line */
 import Currency from './3-currency';
 
 export default class Pricing {
@@ -23,7 +25,7 @@ export default class Pricing {
   }
 
   displayFullPrice() {
-    return `${this._amount} ${this.currency._name} (${this.currency._code})`;
+    return `${this._amount} ${this.currency.displayFullCurrency()}`;
   }
 
   static convertPrice(amount, conversionRate) {
