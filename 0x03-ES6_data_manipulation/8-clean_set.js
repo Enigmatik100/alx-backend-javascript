@@ -1,5 +1,5 @@
 const cleanSet = (set, startString) => {
-  if (startString.length > 0) {
+  if (typeof startString === 'string') {
     const res = [];
     for (const el of set) {
       if (el.startsWith(startString)) {
