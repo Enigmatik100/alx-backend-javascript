@@ -5,7 +5,7 @@ const updateStudentGradeByCity = (arr, city, newGrades) => arr.filter((s) => s.l
     if (studentGrade.length > 0) {
       updateStudent.grade = studentGrade[0].grade;
     } else {
-      updateStudent.grade = NaN;
+      updateStudent.grade = 'N/A';
     }
     return student;
   });
